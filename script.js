@@ -1,4 +1,5 @@
 
+
 function getComputerChoice() {
   const randomNumber = Math.random();
 
@@ -41,12 +42,6 @@ function playGame() {
     }
   }
 
-  for (let i = 1; i <= 5; i++) {
-    console.log(`\n--- Round ${i} ---`);
-    const humanSelection = getHumanChoice();
-    const computerSelection = getComputerChoice();
-    playRound(humanSelection, computerSelection);
-  }
 
   console.log("\n=== Final Score ===");
   console.log("Human:", humanScore);
